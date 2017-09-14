@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8A10D424-3C69-4B1A-994A-5B4357EE231B}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>AutomatedCodeTesting</RootNamespace>
-    <AssemblyName>AutomatedCodeTesting</AssemblyName>
+    <ProjectGuid>{B49C00A1-6188-45A3-B825-0DF082821610}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TestAutomatedCodeTesting</RootNamespace>
+    <AssemblyName>TestAutomatedCodeTesting</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,9 +31,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -45,10 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AutomatedCodeTesting\AutomatedCodeTesting.csproj">
+      <Project>{8a10d424-3c69-4b1a-994a-5b4357ee231b}</Project>
+      <Name>AutomatedCodeTesting</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
