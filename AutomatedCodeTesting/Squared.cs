@@ -9,7 +9,7 @@ namespace AutomatedCodeTesting {
 	public class Squared {
 
 		public int Calculate(int number) {
-			return number * number;
+			return (number * number);
 		}
 	}
 }
